@@ -1,0 +1,53 @@
+*&---------------------------------------------------------------------*
+*& Report ZA020_HW3P3
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT ZA020_HW3P3.
+
+*sort by agency name
+
+
+TYPES: BEGIN OF AGENCYTYPE,
+         NAME     TYPE STRAVELAG-NAME,
+         STREET   TYPE STRAVELAG-STREET,
+         POSTCODE TYPE STRAVELAG-POSTCODE,
+         CITY     TYPE STRAVELAG-CITY,
+         COUNTRY  TYPE STRAVELAG-COUNTRY,
+         REGION   TYPE STRAVELAG-REGION,
+       END OF AGENCYTYPE.
+
+TYPES: AGENCYTABLETYPE TYPE SORTED TABLE OF AGENCYTYPE WITH NON-UNIQUE KEY NAME.
+
+DATA: ITABLE TYPE AGENCYTABLETYPE,
+      WA     LIKE LINE OF ITABLE.
+
+SELECT NAME STREET POSTCODE CITY COUNTRY REGION FROM STRAVELAG INTO CORRESPONDING FIELDS OF TABLE ITABLE.
+
+WA-NAME = 'Zack''s Agency'.
+WA-STREET = '1109 University Parkway'.
+WA-POSTCODE = '28601'.
+WA-CITY = 'Hickory'.
+WA-COUNTRY = 'US'.
+WA-REGION = 'NC'.
+
+INSERT WA INTO TABLE ITABLE.
+
+READ TABLE ITABLE WITH TABLE KEY NAME = 'Sunshine Travel' INTO WA.
+WA-NAME = 'AAA Travel'.
+INSERT WA INTO TABLE ITABLE.
+DELETE TABLE ITABLE WITH TABLE KEY NAME = 'Sunshine Travel'.
+
+DELETE TABLE ITABLE WITH TABLE KEY NAME = 'Trans World Travel'.
+
+
+
+
+LOOP AT ITABLE INTO WA.
+  IF WA-COUNTRY = 'US'.
+    WRITE: / WA-NAME.
+    WRITE: / WA-STREET.
+    WRITE: /(*) WA-CITY NO-GAP, ',',(*) WA-REGION, WA-POSTCODE.
+    ULINE.
+  ENDIF.
+ENDLOOP.
