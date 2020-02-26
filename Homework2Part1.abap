@@ -1,3 +1,43 @@
+* Program One: Design a structure, fill it with data, and display output
+* It is recommended that you review the requirements of this program several times during your work and then also
+* review your final submission candidate to insure that you have fulfilled everything to the best of your ability.
+* A library tracks the following information for all books:
+* • Book Title
+* • Primary Author
+* • Publisher
+* • Publisher State (2 letter abbreviation)
+* • Publication Date
+* • Tracking ID (this is a 9 digit numeric code such as 987654321)
+* • Purchase Cost
+* • Date of Purchase
+* Create a structure type capable of holding the information noted above. Take some time to consider the appropriate type choices for each field.
+* Create two structures and fill each of them with data for a hypothetical book. Output each of the structures in the following manner:
+*
+*  Label format:
+* Book Title: Author: Publisher: Published: Tracking ID: Purchase Cost: Date of Purchase:
+* Table format:
+* Title
+* Author Publisher, ST MM/DD/YYYY xxxxxxxxx $x.xx MM/DD/YYYY
+* Publisher
+* Publisher Publisher
+* Title
+* Title Title
+* Author
+* Author Author
+* State Published
+* NY MM/DD/YY TN MM/DD/YY
+* Tracking ID
+* xxxxxxxx
+* xxxxxxxx
+* Cost Purchased
+* $x.xx MM/DD/YY $x.xx MM/DD/YY
+*  Note the following:
+* • Write both of the books out in label format with a blank line between then. Then follow that output with a single table that contains information on both books. (One table header with two books in table body.)
+* • Match the formatting shown here precisely. The horizontal spacing of the table is at your discretion, but make it look nice. Pay particular attention to the dates.
+* • Do not store anything in your structure that does not need to be there. Certain elements of the above are added in the output statements as literal text.
+*
+
+
 REPORT ZA020_HOMEWORK2.
 
 

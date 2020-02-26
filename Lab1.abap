@@ -3,8 +3,6 @@
 *&---------------------------------------------------------------------*
 *&
 *&---------------------------------------------------------------------*
-*
-* ¬Lab 1
 * Tables
 * BKPF
 * BSEG
@@ -23,12 +21,7 @@
 * Selection Screen
 * Select Options for company code, accounting document number, period, and fiscal year. Make company code and year mandatory.
 * Program
-* Retrieve the information from the database using the selection criteria from above. Only output the fields from above
-* (use your own custom type(s)); you may need other fields from BSEG in order to match the information to BKPF. Display the data using an ALV instead of write
-* statements, CL_SALV_TABLE. Calculate the totals using aggregations. Add a sort on company code, year, and document number to the ALV; with grouping/subtotals enabled.
-* All standard functions should be enabled. Optimize the width. An example output follows.
-* *
-* *
+* Retrieve the information from the database using the selection criteria from above. Only output the fields from above (use your own custom type(s)); you may need other fields from BSEG in order to match the information to BKPF. Display the data using an ALV instead of write statements, CL_SALV_TABLE. Calculate the totals using aggregations. Add a sort on company code, year, and document number to the ALV; with grouping/subtotals enabled. All standard functions should be enabled. Optimize the width. An example output follows.
 
 
 
