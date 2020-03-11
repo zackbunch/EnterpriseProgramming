@@ -1,8 +1,4 @@
-## CSCI 4767/
-
-## Enterprise
-
-## Programming
+## CSCI 4767 Enterprise Programming
 
 ## 3 Credit Hours
 
