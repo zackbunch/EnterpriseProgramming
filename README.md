@@ -2,7 +2,7 @@
 
 ## 3 Credit Hours
 
-## Spring 20 20
+## Spring 2020
 
 ```
 Instructor: Brad Smith
