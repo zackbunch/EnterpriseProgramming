@@ -14,10 +14,9 @@ Information below is subject to change throughout the semester. Any changes made
 announced in class.
 ```
 ```
-Spring 20 20 Office Hours
+Spring 2020 Office Hours
 ```
-```
-N/A: Email me
+
 ```
 ## Recommended Textbook
 
